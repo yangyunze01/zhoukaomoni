@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.day_0609.MainActivity">
+    <com.example.day_0609.TitleView
+        android:id="@+id/titleView_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_text="-"
+        app:right_text="+"
+        app:title_text="首页"></com.example.day_0609.TitleView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView_main"
+        >
+        <com.example.day_0609.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/flowLayout_main"
+            >
+        </com.example.day_0609.FlowLayout>
+    </ScrollView>
+
+</LinearLayout>
